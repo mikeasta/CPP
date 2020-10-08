@@ -20,7 +20,10 @@ int main() {
     bool isPrime = true;                      // являетсяЛиПростым
 
     for (int j = 3 ; j <= sqrt(i); j += 2) {  // Перебор делителей
-      if ((i % j) == 0) isPrime = false;      // "Ловля" составного числа 
+      if ((i % j) == 0) {                     // "Ловля" составного числа
+        isPrime = false; 
+        break;
+      }
     }
 
     if (isPrime)  {
