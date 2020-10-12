@@ -31,13 +31,8 @@ int main() {
             return 0;
         }
 
-        // Логика минимального числа при первой итерации
-        if (numberAmount == 0) {
-            minNumber = x;
-        }
-        
-        // Логика минимального числа при последующих итерациях
-        if (x <= minNumber && numberAmount != 0) {
+        // Логика минимального числа при первой итерации и минимального числа при последующих итерациях
+        if ((x <= minNumber && numberAmount != 0) || (numberAmount == 0)) {
             minNumber = x;
         }
 
