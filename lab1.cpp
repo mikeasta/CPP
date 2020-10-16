@@ -4,7 +4,6 @@ using namespace std;
 
 int main() {
     // Координаты вершин треугольника : [2;2], [6;2], [6;6]
-
     float x, y;
 
     while(true) {

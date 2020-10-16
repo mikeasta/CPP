@@ -12,13 +12,13 @@ int main() {
         cin >> x;
 
         if (x == 0) {
-            cout << "Min: " << minNumber << endl;
-            cout << "Average: " <<  1.0 * numberSum / numberAmount << endl;
-            cout << "Positive: " << positiveAmount << endl;
+            cout << "Min: "      << minNumber                       << endl;
+            cout << "Average: "  <<  1.0 * numberSum / numberAmount << endl;
+            cout << "Positive: " << positiveAmount                  << endl;
             return 0;
         }
 
-        if ((x <= minNumber && numberAmount != 0) || (numberAmount == 0)) {
+        if (numberAmount == 0 || x <= minNumber) {
             minNumber = x;
         }
 
