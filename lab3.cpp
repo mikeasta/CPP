@@ -10,7 +10,6 @@ int main() {
 
   if (n == 2) {
       cout << 2;
-      return 0;
   }
 
   for (int i = 3; i <= n; i += 2) {
