@@ -2,16 +2,13 @@
 #include <iostream>
 #include <math.h>
 using namespace std;
-
 int main() {
   int n;
   cin >> n;
   int dozensAmount = 0;
-
   if (n == 2) {
       cout << 2;
   }
-
   for (int i = 3; i <= n; i += 2) {
 
     bool isPrime = true;
